@@ -98,7 +98,7 @@
           <p>Projetos organizados como estudos de caso: contexto, construção técnica e uso da solução na decisão operacional.</p>
         </div>
 
-        <p class="privacy-note">As telas de demonstração foram reconstruídas com dados fictícios, profissionais numerados e avatares neutros. Não contêm registros pessoais, fotografias ou localizações reais. Os gráficos agregados do estudo são apresentados separadamente e preservam os resultados da pesquisa.</p>
+        <p class="privacy-note">As telas dos projetos de gestão e BI foram reconstruídas com dados fictícios, profissionais numerados e avatares neutros; não contêm registros pessoais ou fotografias. O agente meteoceanográfico utiliza localizações de plataformas publicadas pela ANP. Os gráficos agregados do estudo são apresentados separadamente e preservam os resultados da pesquisa.</p>
 
         <article class="case-featured">
           <div class="case-header">
@@ -296,6 +296,24 @@
               </div>
             </section>
           </article>
+          <article class="case-card meteocean-case" id="agente-meteoceanografico">
+            <div class="meteocean-intro">
+              <div class="card-copy">
+                <span class="case-index">Projeto 07</span>
+                <p class="case-type">IA aplicada · Mergulho offshore · Apoio à decisão</p>
+                <h3>Agente especialista em condições meteoceanográficas</h3>
+                <p>Protótipo para apoiar a avaliação de janelas operacionais em mergulho raso com ar comprimido a partir de SDSV. O agente transforma uma pergunta em linguagem natural em parâmetros estruturados, consulta previsões meteoceanográficas e apresenta evidências para análise da equipe.</p>
+                <p>O Gemini interpreta a solicitação via function calling; Pydantic valida os dados; regras determinísticas verificam os requisitos contratuais da IMCA D067 ou NORMAM-222 antes de acionar o classificador histórico de probabilidade de interrupção. Um RAG recupera contexto técnico com identificação de documento e página.</p>
+                <p class="meteocean-caveat">A saída é apoio à decisão: não substitui a supervisão, os procedimentos da operação nem a avaliação das condições observadas no local.</p>
+                <div class="case-tags"><span>Gemini</span><span>Function calling</span><span>Pydantic</span><span>Open-Meteo</span><span>RAG</span><span>Machine Learning</span><span>Streamlit</span></div>
+                <a class="meteocean-demo-link" href="https://florincy.github.io/meteocean-agent-demo/" target="_blank" rel="noopener noreferrer" aria-label="Assistir à demonstração em vídeo do agente meteoceanográfico">Assistir à demonstração em vídeo <span aria-hidden="true">↗</span></a>
+              </div>
+              <figure class="meteocean-architecture">
+                <img src="assets/demo/meteocean-arquitetura.png" alt="Arquitetura do agente: pergunta operacional, Gemini, Open-Meteo e RAG, gate normativo, modelo histórico e apoio à decisão" loading="lazy">
+                <figcaption>Arquitetura do protótipo: evidências ambientais e técnicas antes da estimativa histórica.</figcaption>
+              </figure>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -304,7 +322,7 @@
       <div class="wrap">
         <article class="case-card">
           <div class="card-copy">
-            <span class="case-index">Projeto 07 · Pesquisa exploratória do mestrado</span>
+            <span class="case-index">Projeto 08 · Pesquisa exploratória do mestrado</span>
             <p class="case-type">Inteligência artificial · Química computacional</p>
             <h3 id="pesquisa-ia-title">Predição de propriedades químicas com aprendizado de máquina</h3>
             <p>Durante o mestrado, explorei aprendizado de máquina para investigar relações entre propriedades eletrônicas e deslocamentos químicos de selênio-77. O trabalho envolveu preparação de bases científicas, extração de atributos, análise multivariada e comparação de modelos de regressão e redes neurais, conectando conhecimento químico à modelagem orientada por dados.</p>

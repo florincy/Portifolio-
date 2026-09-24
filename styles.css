@@ -210,6 +210,16 @@ a { color:inherit; text-decoration:none; }
 .environmental-gallery figcaption { display:grid; gap:5px; padding:15px 17px 18px; border-top:1px solid #dce4e0; }
 .environmental-gallery figcaption strong { font-size:.84rem; }
 .environmental-gallery figcaption small { color:#6a7f87; line-height:1.45; }
+.meteocean-case { grid-column:1/-1; }
+.meteocean-intro { display:grid; grid-template-columns:1.1fr .9fr; align-items:stretch; }
+.meteocean-intro .card-copy { display:flex; flex-direction:column; justify-content:center; padding:42px; }
+.meteocean-intro .card-copy > p:not(.case-type) + p { margin-top:12px; }
+.meteocean-intro .meteocean-caveat { padding-left:14px; border-left:2px solid #2b8069; font-size:.88rem; }
+.meteocean-architecture { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; margin:0; padding:28px; border-left:1px solid #d5dfda; background:#f5f8f6; }
+.meteocean-architecture img { display:block; width:100%; max-height:650px; object-fit:contain; }
+.meteocean-architecture figcaption { max-width:420px; color:#607781; font-size:.72rem; line-height:1.5; text-align:center; }
+.meteocean-demo-link { display:inline-flex; align-items:center; justify-content:space-between; gap:24px; align-self:flex-start; margin-top:24px; padding:12px 15px; color:#fff; background:var(--forest); font-size:.8rem; font-weight:700; transition:background .2s ease,transform .2s ease; }
+.meteocean-demo-link:hover,.meteocean-demo-link:focus-visible { background:#176c50; transform:translateY(-2px); }
 .wide-card { grid-column:1/-1; display:grid; grid-template-columns:1.35fr .65fr; }
 .card-image { height:335px; overflow:hidden; background:#eef1ef; }
 .wide-card .card-image { height:430px; }
@@ -259,7 +269,7 @@ footer .wrap { min-height:84px; display:flex; justify-content:space-between; ali
   .about-grid,.projects-heading,.method-heading,.experience-grid{grid-template-columns:1fr;gap:38px}
   .pbix-proof{grid-template-columns:1fr;gap:30px}
   .dashboard-proof-heading{grid-template-columns:1fr;gap:20px}
-  .ds-case-intro,.ds-evidence-heading,.mare-intro,.mare-proof-heading,.environmental-intro,.environmental-proof-heading{grid-template-columns:1fr}.ds-case-intro .card-image{height:min(62vw,440px);min-height:0}.ds-pipeline,.mare-pipeline,.environmental-pipeline{grid-template-columns:repeat(2,1fr)}.ds-results{grid-template-columns:repeat(2,1fr)}.ds-results div:nth-child(2){border-right:0}.ds-results div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.17)}.ds-results div:last-child{grid-column:1/-1}.ds-visuals{grid-template-columns:1fr 1fr}.ds-visuals figure:first-child{grid-column:1/-1}.mare-intro .mare-hero-image,.environmental-intro .environmental-hero-image{min-height:0;height:min(62vw,440px)}.environmental-gallery{grid-template-columns:1fr 1fr}.environmental-gallery .environmental-map{grid-column:1/-1}
+  .ds-case-intro,.ds-evidence-heading,.mare-intro,.mare-proof-heading,.environmental-intro,.environmental-proof-heading,.meteocean-intro{grid-template-columns:1fr}.ds-case-intro .card-image{height:min(62vw,440px);min-height:0}.ds-pipeline,.mare-pipeline,.environmental-pipeline{grid-template-columns:repeat(2,1fr)}.ds-results{grid-template-columns:repeat(2,1fr)}.ds-results div:nth-child(2){border-right:0}.ds-results div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.17)}.ds-results div:last-child{grid-column:1/-1}.ds-visuals{grid-template-columns:1fr 1fr}.ds-visuals figure:first-child{grid-column:1/-1}.mare-intro .mare-hero-image,.environmental-intro .environmental-hero-image{min-height:0;height:min(62vw,440px)}.environmental-gallery{grid-template-columns:1fr 1fr}.environmental-gallery .environmental-map{grid-column:1/-1}.meteocean-architecture{border-left:0;border-top:1px solid #d5dfda}.meteocean-architecture img{max-height:540px}
   .bi-flow{grid-template-columns:1fr}.bi-flow figure:not(:last-child)::after{content:'↓';top:auto;right:calc(50% - 14px);bottom:-20px}
   .case-grid{grid-template-columns:1fr}.wide-card{grid-column:auto;display:block}.wide-card .card-image{height:min(55vw,430px)}
   .method{grid-template-columns:1fr;gap:50px}.method .section-label{grid-column:auto;margin-bottom:5px}.method-heading{display:block;margin:0}.method-grid{grid-template-columns:1fr}.method-grid li,.method-grid li:first-child{padding:22px 0}
